@@ -34,7 +34,20 @@ const Home = () => {
                                 Dhaka , Bangladesh</p>
                         </div>
                     </div>
-                    <div className="healthDetails"></div>
+                    <div className="healthDetails">
+                        <div className="block">
+                            <p><strong className='font-size'>75</strong>Kg</p>
+                            <p>Weight</p>
+                        </div>
+                        <div className="block">
+                            <p><strong className='font-size'>6.5</strong></p>
+                            <p>Height</p>
+                        </div>
+                        <div className="block">
+                            <p><strong className='font-size'>27</strong>yrs</p>
+                            <p>Weight</p>
+                        </div>
+                    </div>
                     <div className="breakTime"></div>
                     <div className="userExerciseDetials"></div>
 

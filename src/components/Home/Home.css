@@ -23,13 +23,14 @@
 
 
 .user-info {
-    padding: 0px 20px;
+    padding: 55px 25px;
 }
 
 .userProfile {
     display: flex;
     justify-content: start;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .user-image {
@@ -42,17 +43,39 @@
 
 .user-name {
     margin: 10px 0px;
-    font-size:27px;
+    font-size: 27px;
 }
 
 .user-address {
     font-size: 20px;
     margin-top: 0px;
+    color: gray;
 }
 
 .icon {
     width: 20px;
     margin-right: 5px;
+}
+
+.healthDetails {
+    background-color: #F2F4FA;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    ;
+}
+
+.block {
+    padding: 30px;
+}
+
+.block p {
+    margin: 0px;
+}
+
+.font-size {
+    font-size: 40px;
 }
 
 
