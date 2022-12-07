@@ -1,0 +1,33 @@
+.card {
+
+    border-radius: 15px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 6px gray;
+    background-color: white;
+
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-info h2 {
+    margin: 10px 0px;
+    ;
+}
+
+.description {
+    color: gray;
+}
+
+.btn-add {
+    width: 100%;
+    background-color: blueviolet;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 7px;
+}
