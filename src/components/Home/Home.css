@@ -60,7 +60,7 @@
 }
 
 .block {
-    padding: 30px;
+    padding: 20px;
 }
 
 .block p {
@@ -124,6 +124,7 @@
     font-size: 18px;
     color: white;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 

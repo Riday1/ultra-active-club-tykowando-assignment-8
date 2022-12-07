@@ -5,6 +5,12 @@ import './Home.css'
 import userImage from '../../user-image/user-1.png'
 const Home = () => {
 
+    // set exercise time 
+    const [exerciseTime, setExerciseTime] = useState(0);
+    const handleAddToList = () => {
+        const newTime = exerciseTime + 40;
+        setExerciseTime(newTime);
+    }
 
     const [exercises, setExercises] = useState([]);//fetch json data 
     useEffect(() => {
@@ -18,7 +24,7 @@ const Home = () => {
             <div className='left-part'>
                 <div className="left-container">
                     <Navbar></Navbar>
-                    <Cards exercises={exercises}></Cards>
+                    <Cards exercises={exercises} handleAddToList={handleAddToList}></Cards>
                 </div>
             </div>
             <div className="right-container">
@@ -60,11 +66,11 @@ const Home = () => {
                     <div className="userExerciseDetials">
                         <div className="block-2">
                             <p><strong>Exercise time </strong></p>
-                            <p>200 seconds</p>
+                            <p>{exerciseTime} seconds</p>
                         </div>
                         <div className='block-2'>
                             <p><strong>Break time </strong></p>
-                            <p>15 seconds</p>
+                            <p> seconds</p>
                         </div>
                     </div>
                     <button className='btn-add'>Activity Completed</button>

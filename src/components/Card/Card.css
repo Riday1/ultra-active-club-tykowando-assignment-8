@@ -31,3 +31,6 @@
     color: white;
     border-radius: 7px;
 }
+.btn-add:active{
+    background-color: rgb(89, 23, 150);
+}

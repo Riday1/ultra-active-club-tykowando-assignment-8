@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.css'
-const Card = ({ exercise }) => {
+const Card = ({ exercise, handleAddToList }) => {
     const { id, name, age, img, time, description } = exercise;
     // console.log(img)
     return (
@@ -12,7 +12,7 @@ const Card = ({ exercise }) => {
                 <p>For Age : <strong>{age}</strong></p>
                 <p>Time Required : <strong>{time}S</strong></p>
             </div>
-            <button className='btn-add'>Add To List</button>
+            <button onClick={() => handleAddToList()} className='btn-add'>Add To List</button>
         </div>
     );
 };
