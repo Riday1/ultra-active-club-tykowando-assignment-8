@@ -1,7 +1,7 @@
 .main-container {
     display: grid;
     grid-template-columns: 5fr 2fr;
-    
+
 
 }
 
@@ -11,4 +11,25 @@
 
 .left-container {
     margin: 70px 50px;
+}
+
+@media screen and (max-width:600px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .left-container {
+        margin: 40px;
+
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1200px) {
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+
+    }
 }
