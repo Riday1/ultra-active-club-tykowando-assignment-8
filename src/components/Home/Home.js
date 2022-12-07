@@ -17,7 +17,7 @@ const Home = () => {
             <div className='left-part'>
                 <div className="left-container">
                     <Navbar></Navbar>
-                    
+                    <Cards exercises={exercises}></Cards>
                 </div>
             </div>
             <div className="right-container">

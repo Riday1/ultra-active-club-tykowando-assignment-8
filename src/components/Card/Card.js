@@ -12,11 +12,7 @@ const Card = ({ exercise }) => {
                 <p>For Age : <strong>{age}</strong></p>
                 <p>Time Required : <strong>{time}S</strong></p>
             </div>
-
-
             <button className='btn-add'>Add To List</button>
-
-
         </div>
     );
 };
