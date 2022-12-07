@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Axe Kick",
+        "img": "./images/Axe_Kick.jpg",
+        "age": "20-25",
+        "time": 40,
+        "description": "An axe kick, also known as a hammer kick or stretch kick, is characterized by a straightened leg with the heel descending onto an opponent like the blade of an axe"
+    },
+    {
+        "id": 2,
+        "name": "Down Ward Block",
+        "img": "./images/downwardBlock.jpg",
+        "age": "20-25",
+        "time": 40,
+        "description": "Downward Block is martial art style arm technique designed to increase the strength, fexibility and agility of the arms, core and base of the body"
+    },
+    {
+        "id": 3,
+        "name": "Flying Kick",
+        "img": "./images/flying-Kick.jpg",
+        "age": "20-25",
+        "time": 40,
+        "description": "A flying kick is a type of kick in certain martial arts and in martial-arts based gymnastics, with the particularity that the kick is delivered while in the air, specifically moving into the opponent after a running start to gain "
+    },
+    {
+        "id": 4,
+        "name": "Front Kick",
+        "img": "./images/Front_Kick.jpg",
+        "age": "20-25",
+        "time": 40,
+        "description": "The front kick in martial arts is a kick executed by lifting the knee straight forward, while keeping the foot and shin either hanging freely or pulled to the hip"
+    },
+    {
+        "id": 5,
+        "name": "High Block",
+        "img": "./images/hightBlock.jpg",
+        "age": "20-25",
+        "time": 40,
+        "description": "The High Block  is intended to deflect an attack that comes from above, such as a downward strike."
+    },
+    {
+        "id": 6,
+        "name": "Middle Block",
+        "img": "./images/middleBlock.jpg",
+        "age": "20-25",
+        "time": 40,
+        "description": "The Inside Middle Block (also called an Inward Block, Middle Block) starts at the side of the body and moves to the center. "
+    },
+    {
+        "id": 7,
+        "name": "Side Kick",
+        "img": "./images/side-kick.jpg",
+        "age": "20-25",
+        "time": 40,
+        "description": "The side kick works all the major lower body muscle groups, particularly the quads, glutes and outer thighs."
+    },
+    {
+        "id": 8,
+        "name": "Tornado Kick",
+        "img": "./images/Tornado_Kick.jpg",
+        "age": "20-25",
+        "time": 40,
+        "description": "The tornado kick, also known as the 540 kick, is used in taekwondo and MMA to confuse or distract opponents"
+    },
+    {
+        "id": 9,
+        "name": "Meditation ",
+        "img": "./images/Martial-Arts-Meditation.png",
+        "age": "20-25",
+        "time": 50,
+        "description": "Meditation is considered a type of mind-body complementary medicine. Meditation can produce a deep state of relaxation and a tranquil mind. "
+    }
+]
