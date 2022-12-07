@@ -13,12 +13,57 @@
     margin: 70px 50px;
 }
 
+
+
+
+
+
+
+
+
+
+.user-info {
+    padding: 0px 20px;
+}
+
+.userProfile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.user-image {
+    width: 80px;
+}
+
+.user-details {
+    margin-left: 20px;
+}
+
+.user-name {
+    margin: 10px 0px;
+    font-size:27px;
+}
+
+.user-address {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+
+
 @media screen and (max-width:600px) {
     .main-container {
         display: flex;
         flex-direction: column;
     }
- 
+
     .left-container {
         margin: 40px;
 
