@@ -43,13 +43,31 @@ const Home = () => {
                             <p><strong className='font-size'>6.5</strong></p>
                             <p>Height</p>
                         </div>
+
                         <div className="block">
                             <p><strong className='font-size'>27</strong>yrs</p>
                             <p>Weight</p>
                         </div>
                     </div>
-                    <div className="breakTime"></div>
-                    <div className="userExerciseDetials"></div>
+                    <h2 className='break-title'>Add A Break</h2>
+                    <div className="breakTime">
+                        <button>10s</button>
+                        <button>20s</button>
+                        <button>30s</button>
+                        <button>40s</button>
+                    </div>
+                    <h2>Exercise Details</h2>
+                    <div className="userExerciseDetials">
+                        <div className="block-2">
+                            <p><strong>Exercise time </strong></p>
+                            <p>200 seconds</p>
+                        </div>
+                        <div className='block-2'>
+                            <p><strong>Break time </strong></p>
+                            <p>15 seconds</p>
+                        </div>
+                    </div>
+                    <button className='btn-add'>Activity Completed</button>
 
                 </div>
             </div>
