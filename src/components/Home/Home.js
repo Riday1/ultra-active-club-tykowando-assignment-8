@@ -5,14 +5,54 @@ import './Home.css'
 import userImage from '../../user-image/user-1.png'
 const Home = () => {
 
+
+
+
     // set exercise time 
     const [exerciseTime, setExerciseTime] = useState(0);
     const handleAddToList = () => {
         const newTime = exerciseTime + 40;
         setExerciseTime(newTime);
+        localStorage.setItem('exercise-time', newTime);
     }
+    useEffect(() => {
+        const storedExerciseTime = localStorage.getItem('exercise-time');
+        if (!storedExerciseTime) {
+            setExerciseTime(0);
+        }
+        else {
+            setExerciseTime(storedExerciseTime);
+        }
+    }, [])
 
-    const [exercises, setExercises] = useState([]);//fetch json data 
+
+
+
+
+
+
+    //set Break Time through  useState
+    const [breakTime, setBreakTime] = useState(0)
+    const handleBreakTime = (param) => {
+
+        setBreakTime(param);
+        localStorage.setItem('break-time', param);
+    }
+    // loaded previous break time from localStorage  using useEffect hook 
+    useEffect(() => {
+        const storedBreakTime = localStorage.getItem('break-time');
+        console.log(storedBreakTime);
+        if (!storedBreakTime) {
+            setBreakTime(0);
+        }
+        else {
+            setBreakTime(storedBreakTime);
+        }
+    }, [])
+
+    // load fetch data into exercises state
+    const [exercises, setExercises] = useState([]);
+    //fetch json data using useEffect
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -57,10 +97,10 @@ const Home = () => {
                     </div>
                     <h2 className='break-title'>Add A Break</h2>
                     <div className="breakTime">
-                        <button>10s</button>
-                        <button>20s</button>
-                        <button>30s</button>
-                        <button>40s</button>
+                        <button onClick={() => handleBreakTime(10)}>10s</button>
+                        <button onClick={() => handleBreakTime(20)}>20s</button>
+                        <button onClick={() => handleBreakTime(30)}>30s</button>
+                        <button onClick={() => handleBreakTime(40)}>40s</button>
                     </div>
                     <h2>Exercise Details</h2>
                     <div className="userExerciseDetials">
@@ -70,7 +110,7 @@ const Home = () => {
                         </div>
                         <div className='block-2'>
                             <p><strong>Break time </strong></p>
-                            <p> seconds</p>
+                            <p>{breakTime} seconds</p>
                         </div>
                     </div>
                     <button className='btn-add'>Activity Completed</button>
