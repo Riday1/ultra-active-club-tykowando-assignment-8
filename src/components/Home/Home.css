@@ -1,0 +1,14 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    
+
+}
+
+.left-part {
+    background-color: #F4F7F9;
+}
+
+.left-container {
+    margin: 70px 50px;
+}
