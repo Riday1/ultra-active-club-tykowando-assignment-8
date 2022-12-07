@@ -3,6 +3,8 @@ import Cards from '../Cards/Cards';
 import Navbar from '../Navbar/Navbar';
 import './Home.css'
 import userImage from '../../user-image/user-1.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
 
 
@@ -15,15 +17,7 @@ const Home = () => {
         setExerciseTime(newTime);
         localStorage.setItem('exercise-time', newTime);
     }
-    useEffect(() => {
-        const storedExerciseTime = localStorage.getItem('exercise-time');
-        if (!storedExerciseTime) {
-            setExerciseTime(0);
-        }
-        else {
-            setExerciseTime(storedExerciseTime);
-        }
-    }, [])
+
 
 
 
@@ -59,6 +53,18 @@ const Home = () => {
             .then(data => setExercises(data))
     }, [])
 
+    const handleActivityCompletd = () => {
+        toast.success('Activity Completed Successfully ', {
+            position: "top-center",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    }
     return (
         <div className='main-container'>
             <div className='left-part'>
@@ -72,7 +78,7 @@ const Home = () => {
                     <div className="userProfile">
                         <img className='user-image' src={userImage} alt="" />
                         <div className='user-details'>
-                            <h2 className='user-name'>Arnob Kormokar Shishir </h2>
+                            <h2 className='user-name'>Riday Hossain </h2>
                             <p className='user-address'><svg className='icon' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -113,7 +119,19 @@ const Home = () => {
                             <p>{breakTime} seconds</p>
                         </div>
                     </div>
-                    <button className='btn-add'>Activity Completed</button>
+                    <button onClick={handleActivityCompletd} className='btn-add'>Activity Completed</button>
+                    <ToastContainer
+                        position="top-right"
+                        autoClose={5000}
+                        hideProgressBar={false}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="colored"
+                    />
 
                 </div>
             </div>
