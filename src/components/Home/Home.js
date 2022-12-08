@@ -5,6 +5,7 @@ import './Home.css'
 import userImage from '../../user-image/user-1.png'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Question from '../Question/Question';
 const Home = () => {
 
 
@@ -35,7 +36,7 @@ const Home = () => {
     // loaded previous break time from localStorage  using useEffect hook 
     useEffect(() => {
         const storedBreakTime = localStorage.getItem('break-time');
-        console.log(storedBreakTime);
+        // console.log(storedBreakTime);
         if (!storedBreakTime) {
             setBreakTime(0);
         }
@@ -53,7 +54,7 @@ const Home = () => {
             .then(data => setExercises(data))
     }, [])
 
-    const handleActivityCompletd = () => {
+    const handleActivityCompleted = () => {
         toast.success('Activity Completed Successfully ', {
             position: "top-center",
             autoClose: 1000,
@@ -71,6 +72,9 @@ const Home = () => {
                 <div className="left-container">
                     <Navbar></Navbar>
                     <Cards exercises={exercises} handleAddToList={handleAddToList}></Cards>
+                    <Question></Question>
+                    
+
                 </div>
             </div>
             <div className="right-container">
@@ -119,7 +123,7 @@ const Home = () => {
                             <p>{breakTime} seconds</p>
                         </div>
                     </div>
-                    <button onClick={handleActivityCompletd} className='btn-add'>Activity Completed</button>
+                    <button onClick={handleActivityCompleted} className='btn-add'>Activity Completed</button>
                     <ToastContainer
                         position="top-right"
                         autoClose={5000}
@@ -135,6 +139,7 @@ const Home = () => {
 
                 </div>
             </div>
+
         </div>
     );
 };
